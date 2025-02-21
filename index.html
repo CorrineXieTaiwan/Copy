@@ -670,7 +670,7 @@ primarySelect.addEventListener('change', () => {
       opt.value = option.value;
 
       // 限制選單顯示 30 個字，超過則加上 "..."
-      const maxLength = 40;
+      const maxLength = 30;
       opt.textContent = option.text.length > maxLength 
         ? option.text.substring(0, maxLength) + "..." 
         : option.text;
