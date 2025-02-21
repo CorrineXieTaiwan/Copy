@@ -537,7 +537,7 @@ category99: [ // 護理實習生項目
       { value: 'Nasal Cannula', text: '班內氧氣Nasal Cannula 3L/min使用，呼吸平順，血氧穩定，暫無呼吸不適主訴，續觀呼吸型態。' },
       { value: 'Inspiron', text: '班內氧氣Inspiron Mask 28% 5L/min使用，呼吸平順，血氧穩定，暫無呼吸不適主訴，續觀呼吸型態。' },
       { value: 'Simple', text: '班內氧氣Simple Mask 6L/min使用，呼吸平順，血氧穩定，暫無呼吸不適主訴，續觀呼吸型態。' },
-      { value: 'BIPAP', text: '班內呼吸器BIPAP FiO2:＿氧氣使用，呼吸平順，血氧穩定，視需要予協助抽痰，續觀血氧變化。' },
+      { value: 'BIPAP', text: '班內呼吸器BIPAP ST Mode、FiO2:＿% 氧氣使用、PEEP:＿、PC:＿、Rate:＿、Pt:＿，呼吸平順，班內血氧穩定，視需要予協助抽痰，續觀血氧變化。' },
       { value: 'HFNC', text: '班內呼吸器HFNC FiO2:＿氧氣使用，呼吸平順，血氧穩定，視需要予協助抽痰，續觀血氧變化。' },
       { value: 'Venturi', text: '班內氧氣Venturi Mask 35% 8L/min使用，呼吸平順，血氧穩定，暫無呼吸不適主訴，續觀呼吸型態。' },
       { value: 'T-PIECE', text: '班內氧氣Tr.接T-PIECE 28% 5L/min使用，呼吸平順，血氧穩定，視需要予協助抽痰，續觀呼吸型態。' }
@@ -670,7 +670,7 @@ primarySelect.addEventListener('change', () => {
       opt.value = option.value;
 
       // 限制選單顯示 30 個字，超過則加上 "..."
-      const maxLength = 30;
+      const maxLength = 40;
       opt.textContent = option.text.length > maxLength 
         ? option.text.substring(0, maxLength) + "..." 
         : option.text;
