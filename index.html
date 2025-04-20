@@ -292,6 +292,25 @@
         <option value="category99">護理實習專用</option>
       </select>
     </div>
+                <!-- 第二個新增的下拉選單（情景主名稱參考非修改區） -->
+    <div class="field">
+      <label for="primarySelect">護理情景：</label>
+      <select id="primarySelect">
+        <option value="">選擇護理計劃及情景</option>
+        <option value="STAT">STAT Order</option>
+        <option value="Chemo">化學藥物治療</option>
+        <option value="potentialInfection">護理計劃：潛在危險性感染</option>
+        <option value="fallRisk">護理計劃：潛在危險性跌倒</option>
+        <option value="acutePain">護理計劃：急性疼痛問題</option>
+        <option value="feeling">護理計劃：健康焦慮問題</option>
+        <option value="oxygen">護理計劃：低效性呼吸型態</option>
+        <option value="Skin">護理計劃：皮膚破損情形</option>
+        <option value="survey">一般紀錄：檢查相關</option>
+        <option value="OP">一般紀錄：手術相關</option>
+        <option value="other">一般紀錄：其他</option>
+        <option value="Wait">等待建構中</option>
+      </select>
+    </div>
 
          <!-- CORRINE預設範本專用區，非修改區域僅供參考-->
 
@@ -462,8 +481,6 @@ primarySelect.addEventListener('change', () => {
 });
 
 
-
-
   // 主要分類到護理計劃的映射，包含中文名稱:第一欄位對應選單修改區（主要增修區）
   const topOptionsMap = {
 
@@ -512,7 +529,6 @@ category99: [ // 護理實習生項目
 // 第三個下拉式選單項目更改  
     
   const optionsMap = {
-    // 預設CORRINE使用者範本
     Move: [
       { value: 'move1', text: '班內多臥床休息，紅色手圈配戴，雙側床欄使用，床輪固定良好，床旁陪病者照護，予常規探視。' },
       { value: 'move2', text: '班內四肢乏力疲倦虛弱，下床時需協助攙扶，使用輪椅輔助活動，臥床休息時可配合雙側床欄使用，床旁陪病者照護，暫無跌倒情形發生。' },
@@ -601,7 +617,6 @@ category99: [ // 護理實習生項目
        { value: 'Chemo11', text: '現由兩位護理人員雙重核對藥物及醫囑單無誤，依醫囑予※(化)Kemoplat Injection 0.5vial QD IVD、NS 250ml/pack 1pack QD IVD，化療前已測針有回血，生理食鹽水推注順暢，現依醫囑指示設定滴速給藥劑量，續觀病人反應。' },
        { value: 'Chemo11', text: '【日期】MBD（－）、診斷證明書*份??、預約回診（－）、出院帶藥（－）、下次住院單（－）、回診前抽血+X光（－）' },
         ], 
-    // 預設A3701使用者區域
     A3701.1: [
        { value: 'A3701.1.1', text: '(感染)身上暫無管路留置，皮膚外觀完整無破損，四肢溫暖無寒顫，因乳癌術後依醫囑續左手禁治療，暫無不適，治療前後已洗手，續評估有無感染徵兆。' },
        { value: 'A3701.1.2', text: '(感染)人工血管角座存，暫無角針留置，皮膚外觀完整無破損，四肢溫暖無寒顫，暫無不適，治療前後已洗手，續評估有無感染徵兆。' },
@@ -620,10 +635,7 @@ category99: [ // 護理實習生項目
     A3701.2: [
        { value: 'A3701.2.1', text: '(感染)人工血管角座存，依醫囑以無菌技術放置人工血管角針，推注順暢予測試可回血，透明防水敷料覆蓋。' },
        { value: 'A3701.2.2', text: '(跌倒)病人步行入病房，現臥床休息中，雙側床欄拉起，床輪固定，地板乾燥無濕滑，家屬陪伴，班內暫無跌倒情形，續維護環境安全。' },
-        ], 
-
-
-    
+        ],
   };
 
   
