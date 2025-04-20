@@ -299,6 +299,7 @@
       <select id="primarySelect">
         <option value="">選擇護理計劃及情景</option>
         <option value="STAT">STAT Order</option>
+        <option value="Chemo">化學藥物治療</option>
         <option value="potentialInfection">護理計劃：潛在危險性感染</option>
         <option value="fallRisk">護理計劃：潛在危險性跌倒</option>
         <option value="acutePain">護理計劃：急性疼痛問題</option>
@@ -495,7 +496,8 @@ categoryA3873: [ // 預設使用者範本
   { code: 'Survey', label: '一般紀錄：檢查相關' },
   { code: 'OP', label: '一般紀錄：手術相關' },
   { code: 'Other', label: '一般紀錄：其他' },
-  { code: 'STAT', label: '一般紀錄：臨時醫囑或事件' },  
+  { code: 'STAT', label: '一般紀錄：臨時醫囑或事件' }, 
+  { code: 'Chemo', label: '一般紀錄：化學治療' },
   ],
 category2: [ // 二號使用者
   { code: 'Wait', label: '等待建構中' },
@@ -591,9 +593,21 @@ category99: [ // 護理實習生項目
         { value: 'stat9', text: '白班及小夜輸出入量差異數值為＿、尿量＿ml，排便量＿g，觀察病人呼吸平順，無呼吸喘、四肢無水種情形，值班醫師表示持續觀察即可。'},
         ],  
     Wait: [
-          { value: 'wait', text: '尚未建構紀錄項目' },
-       ], 
-
+        { value: 'wait', text: '尚未建構紀錄項目' },
+        ], 
+    Chemo: [
+       { value: 'Chemo1', text: '經主治醫師醫囑指示，病人預計施行化學治療，現已簽署抗癌藥物治療同意書。' },
+       { value: 'Chemo2', text: '經主治醫師醫囑指示，病人預計使用自費藥物，現已簽署相關自費同意書。' },
+       { value: 'Chemo3', text: '班內由兩位護理人員雙重核對已確認化療醫囑程序單，現依醫囑給予前置藥物，並進行化療藥物衛教，病人已知暫無疑慮。' },
+       { value: 'Chemo4', text: '今日人工血管角針已到期，予重新放置，反抽有回血，N/S推注順暢。' },
+       { value: 'Chemo5', text: '尚未建構紀錄項目' },
+       { value: 'Chemo6', text: '(日期)MBD(-)，回診*?(-)、帶藥(-)、下次住院單(-)、回診前抽血+X光(-)' },
+       { value: 'Chemo7', text: '尚未建構紀錄項目' },
+       { value: 'Chemo8', text: '尚未建構紀錄項目' },
+       { value: 'Chemo9', text: '尚未建構紀錄項目' },
+       { value: 'Chemo10', text: '尚未建構紀錄項目' },
+       { value: 'Chemo11', text: '現由兩位護理人員雙重核對藥物及醫囑無誤，依醫囑予※(化)Kemoplat Injection 0.5vial QD IVD、NS 250ml/pack 1pack QD IVD，化療前已測針有回血，生理食鹽水推注順暢，現依醫囑指示設定滴速給藥，續觀病人反應。' },
+        ], 
        
   };
 
